@@ -366,7 +366,7 @@
 }
 
 .ProjectNav_Row_s {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 0 auto;
 }
 
@@ -392,7 +392,7 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0px, 1fr));
     column-gap: 0.8rem;
-    font-size: 0.7500em;
+    font-size: 1.2em;
     line-height: 2;
 }
 
@@ -412,7 +412,6 @@
 .MFooterLink a {
     text-align: right;
     color: #000;
-    font-size: 0.8750em;
     font-weight: 700;
 }
 
@@ -665,16 +664,15 @@ iframe {
 
 .MobileMenuContainer ul li a,
 .ProjectNav_Row_s a{
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 
 .MobileMenuContainer ul li p {
-    font-size: 1.6em;
+    font-size: 1.5em;
 }
 
-.MFooterName,
-.MFooterLink a{
-    font-size: 1.5em;
+.MFooterGridRow {
+    font-size: 1.4em;
 }
 
 .projects-btn {
@@ -748,7 +746,9 @@ iframe {
 .profile, 
 .mobileContainer,
 .live-link-container,
-.ProjectNav_btns {
+.ProjectNav_btns,
+.MobileMenu,
+.MobileMenu.open {
     display: none;
 }
 
@@ -877,9 +877,8 @@ iframe {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 1137px;
     row-gap: 1.2rem;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .featured-desktop-content .projIntro h2 ,
@@ -928,19 +927,20 @@ iframe {
     height: 100vh;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     border-left: solid;
     margin: unset;
     padding: unset;
+    overflow-y: auto;
 }
 
 .about-container-wrapper,
 .featured-desktop-div {
-    overflow-y: auto;
-    padding-bottom: unset;
     width: 100%;
-    padding: 2.5rem;
+    padding: 5rem;
     scrollbar-width: auto;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
 .about-text-container {
@@ -966,6 +966,10 @@ iframe {
 
 .profilepic-container {
     display: none;
+}
+
+.MFooterGridRow {
+    font-size: 1em;
 }
 
 
@@ -1153,29 +1157,31 @@ iframe {
 .caption_container ul,
 .caption_container_list ul {
     margin-left: 2rem;
+    margin-right: 4rem;
 }
 
 .caption_container_grid {
-    column-gap: 2rem;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+display: flex;
+flex-wrap: wrap;
+gap: 2rem;
+margin: 0 auto;
 }
 
 .caption_container_list {
-    grid-column: auto/span 6;
-    margin: 2.5rem 0;
+    flex: 0 0 calc(50% - 1rem);
+    margin-bottom: 2rem;
 }
 
 .caption_container_list h3 {
     font-weight: 600;
-    font-size: 1.6em;
+    font-size: 2em;
 }
 
 .caption_container_list ul li,
 .caption_container_list p {
     margin-top: 0.8rem;
     font-weight: 600;
-    font-size: 1.2em;
+    font-size: 1.5em;
     list-style-type: disc;
 }
 
@@ -1266,4 +1272,10 @@ iframe {
     font-size: 1.4em
 }
 
+}
+
+@media screen and (max-width: 2000px) {
+    .caption_container_list {
+        flex: unset;
+    }
 }
