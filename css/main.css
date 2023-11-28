@@ -802,7 +802,7 @@ iframe {
 .nav-btns-container {
     display: inline-flex;
     margin: 0.5rem 0;
-    justify-content: flex-end;
+    justify-content: space-between;
     gap: 2rem;
 }
 
