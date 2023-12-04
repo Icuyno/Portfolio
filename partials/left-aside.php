@@ -1,14 +1,4 @@
 
-<!-- 
-    
-TO DO:
-
-1. Add links to live pages
-
-2. Filter buttons to work 
-
--->
-
 <?php
 $currentPage = basename($_SERVER['PHP_SELF']);
 $projectPages = array(
@@ -25,7 +15,7 @@ $projectPages = array(
         'liveLink' => 'http://devote-tarot.isabellecuyno.com/',
         'nextLink' => 'coastalrolls.php', // Replace with the actual link for the next project
         'backLink' => 'foodquery.php',
-        'backButtonIcon' => './assets/icons/back-400.svg',
+        'backButtonIcon' => './assets/icons/back-600.svg',
         'backButtonText' => 'Prev Project',
         'nextButtonText' => 'Next Project',
         'nextButtonIcon' => './assets/icons/next-600.svg',
@@ -34,7 +24,7 @@ $projectPages = array(
         'liveLink' => '#',
         'nextLink' => 'letterboxd.php', // Replace with the actual link for the next project
         'backLink' => 'devote.php',
-        'backButtonIcon' => './assets/icons/back-400.svg',
+        'backButtonIcon' => './assets/icons/back-600.svg',
         'backButtonText' => 'Prev Project',
         'nextButtonText' => 'Next Project',
         'nextButtonIcon' => './assets/icons/next-600.svg',
@@ -43,7 +33,7 @@ $projectPages = array(
         'liveLink' => 'https://glazemedia.princessrabano.ca/blog-post/',
         'nextLink' => 'devote.php', // Replace with the actual link for the next project
         'backLink' => 'index.php',
-        'backButtonIcon' => './assets/icons/back-400.svg',
+        'backButtonIcon' => './assets/icons/back-600.svg',
         'backButtonText' => 'Prev Project',
         'nextButtonText' => 'Next Project',
         'nextButtonIcon' => './assets/icons/next-400.svg',
@@ -53,6 +43,7 @@ $projectPages = array(
 $isAboutPage = $currentPage === 'about.php';
 $isProjectPage = array_key_exists($currentPage, $projectPages);
 $projectInfo = $isProjectPage ? $projectPages[$currentPage] : array(); // Default to an empty array if not a project page
+$isWorkPage = ($currentPage === 'work.php'); // Check if the current page is work.php
 ?>
 
 <div class="left-aside-container">
@@ -124,23 +115,30 @@ $projectInfo = $isProjectPage ? $projectPages[$currentPage] : array(); // Defaul
                 }
                 ?>
             </div>
-            <div class="filter-container">
-                <div class="text-container">
-                    Filter by project
-                </div>
-                <button class="filter-btn">
-                    UI/UX
-                </button>
-                <button class="filter-btn">
-                    Web Development
-                </button>
-                <button class="filter-btn">
-                    Product Design
-                </button>
-                <button class="filter-btn">
-                    Collaborative
-                </button>
-            </div>
+            <?php
+            if ($isWorkPage) {
+                    echo '<div class="filter-container">';
+                    echo '<div class="text-container">';
+                    echo 'Filter by project';
+                    echo '</div>';
+                    echo '<button class="filter-btn" onclick="filterProjects(\'All\')">';
+                    echo 'All';
+                    echo '</button>';
+                    echo '<button class="filter-btn" onclick="filterProjects(\'UI/UX\')">';
+                    echo 'UI/UX';
+                    echo '</button>';
+                    echo '<button class="filter-btn" onclick="filterProjects(\'Web Development\')">';
+                    echo 'Web Development';
+                    echo '</button>';
+                    echo '<button class="filter-btn" onclick="filterProjects(\'Product Design\')">';
+                    echo 'Product Design';
+                    echo '</button>';
+                    echo '<button class="filter-btn" onclick="filterProjects(\'Collaborative\')">';
+                    echo 'Collaborative';
+                    echo '</button>';
+                    echo '</div>';
+                }
+            ?>
             <footer class="linksFootermobile">
                 <div class="MFooterGridRow">
                     <div class="MFooterName">Email</div>
