@@ -2,7 +2,7 @@ function filterItems(category) {
   const projItems = document.querySelectorAll(".projItem");
   const buttons = document.querySelectorAll(".projects-btn");
 
-  // Update title based on the selected filter for desktop if the element exists
+    // Update title based on the selected filter for desktop if the element exists
   const titleElementDesktop = document.getElementById("featuredTitleDesktop");
   if (titleElementDesktop) {
     titleElementDesktop.textContent =
@@ -50,7 +50,8 @@ function fadeIn(element) {
   element.style.display = "flex"; // Set display to flex
 
   function animate() {
-element.style.opacity = parseFloat(element.style.opacity) + 0.05;
+    opacity += 0.03; // Adjust the increment value for speed
+    element.style.opacity = opacity;
 
     if (opacity < 1) {
       requestAnimationFrame(animate);
@@ -64,7 +65,7 @@ function fadeOut(element) {
   let opacity = 1;
 
   function animate() {
-    opacity -= 0.05; // Adjust the increment value for speed
+    opacity -= 0.03; // Adjust the increment value for speed
     element.style.opacity = opacity;
 
     if (opacity > 0) {

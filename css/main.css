@@ -100,6 +100,9 @@
 .projItem {
     display: block;
     text-decoration: none;
+    transition: opacity 0.3s ease-in-out;
+    flex-direction: column;
+
 }
 
 .projImgCol {
@@ -162,6 +165,7 @@
     border: solid;
     border-radius: 5px;
     padding: 0.7rem;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .projects-btn:hover {

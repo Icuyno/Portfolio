@@ -16,13 +16,13 @@
 
 <!-- desktop only -->
 <div class="desktop-container">
-    
+
     <?php include './partials/left-aside.php'; ?>
 
     <div class="featured-desktop-container">
         <div class="featured-desktop-div">
             <div class="featured-desktop-content">
-                <h2 class="featured">All Projects</h2>
+                <h2 id="featuredTitleDesktop" class="featured">All Projects</h2>
                 <?php include './partials/artifacts-list-component.php'; ?>
             </div>
         </div>

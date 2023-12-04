@@ -1,6 +1,6 @@
 
 <!-- Food Query -->
-<a href="foodquery.php" class="projItem">
+<a href="foodquery.php" class="projItem" data-category="UI/UX">
     <div class="projImgCol proj_Imgcol">
         <img src="./assets/thumbnails/foodquery_thumb.jpg" alt="App mockup on three iphone 15 pro max">
     </div>
@@ -14,7 +14,7 @@
     </div>
 </a>  
 
-<a href="foodquery.php" class="projects-btn">
+<a href="foodquery.php" class="projects-btn" data-category="UI/UX">
     <div class="work-icon">
         <img src="./assets/icons/view.svg" alt="view button icon">
     </div>
@@ -24,7 +24,7 @@
 </a>
 
 <!-- Devote Collective -->
-<a href="devote.php" class="projItem">
+<a href="devote.php" class="projItem" data-category="Web Development | Product Design | Collaborative">
     <div class="projImgCol proj_Imgcol">
         <img src="./assets/thumbnails/devote-tarot_thumb.jpg" alt="tarot card shuffler site mockup on macbook air M2">
     </div>
@@ -38,7 +38,7 @@
     </div>
 </a>  
 
-<a href="devote.php" class="projects-btn">
+<a href="devote.php" class="projects-btn" data-category="Web Development | Product Design | Collaborative">
     <div class="work-icon">
         <img src="./assets/icons/view.svg" alt="view button icon">
     </div>
@@ -48,7 +48,7 @@
 </a>
 
 <!-- Coastal Rolls -->
-<a href="coastalrolls.php" class="projItem">
+<a href="coastalrolls.php" class="projItem" data-category="UI/UX | Web Development">
     <div class="projImgCol proj_Imgcol">
         <img src="./assets/thumbnails/coastal_rolls_cover.jpg" alt="">
     </div>
@@ -62,7 +62,7 @@
     </div>
 </a>  
 
-<a href="coastalrolls.php" class="projects-btn">
+<a href="coastalrolls.php" class="projects-btn" data-category="UI/UX | Web Development">
     <div class="work-icon">
         <img src="./assets/icons/view.svg" alt="view button icon">
     </div>
@@ -72,7 +72,7 @@
 </a>
 
 <!-- Letterboxd -->
-<a href="letterboxd.php" class="projItem">
+<a href="letterboxd.php" class="projItem" data-category="UI/UX">
     <div class="projImgCol proj_Imgcol">
         <img src="./assets/thumbnails/coastal_rolls_cover.jpg" alt="">
     </div>
@@ -86,7 +86,7 @@
     </div>
 </a>  
 
-<a href="letterboxd.php" class="projects-btn">
+<a href="letterboxd.php" class="projects-btn" data-category="UI/UX">
     <div class="work-icon">
         <img src="./assets/icons/view.svg" alt="view button icon">
     </div>
