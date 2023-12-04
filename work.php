@@ -8,6 +8,26 @@
 <div class="mobileContainer">
 
     <div class="mainProjLayout">
+        <div class="filter-container-mobile">
+            <div class="text-container">
+                Filter by project
+            </div>
+            <button class="filter-btn" onclick="filterProjects('All')">
+                All
+            </button>
+            <button class="filter-btn" onclick="filterProjects('UI/UX')">
+                UI/UX
+            </button>
+            <button class="filter-btn" onclick="filterProjects('Web Development')">
+                Web Development
+            </button>
+            <button class="filter-btn" onclick="filterProjects('Product Design')">
+                Product Design
+            </button>
+            <button class="filter-btn" onclick="filterProjects('Collaborative')">
+                Collaborative
+            </button>
+        </div>
         <h2 class="featured">All Projects</h2>
         <?php include './partials/artifacts-list-component.php'; ?>
     </div>
