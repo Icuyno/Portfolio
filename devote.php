@@ -15,7 +15,7 @@
                     array("Deliverables", "Live website and documentation"),
                     array("Tools", "VS code, Github, HTML, CSS, JS, HostPapa"),
                     array("My Role", "Front-End Developer"),
-                    array("Collaboration with", '<a target="_blank" rel="noopener" style="color: #000"; href="http://pranavithapa.com/artifact3.php">Pranavi Thapa</a>')
+                    array("Collaboration with", '<a target="_blank" rel="noopener" style="color: #000"; href="http://pranavithapa.com/artifact3.php">Pranavi Thapa</a> - Creative Developer')
                 );
                 ?>
                 <div class="proj_title">
@@ -110,7 +110,7 @@ new card ('Fool', 'A willingness...', 'fool'),
 ... additional cards ...
 ];
 
-function getRandom(num){
+function getRandom(num) {
 var randomNumber = Math.floor(Math.random() * num);
 return randomNumber;
 }
@@ -124,7 +124,7 @@ var imageSize = 'width="100" height="150"';
 
 document.getElementById("wall_display").innerHTML = '&lt;img '+ imageSize + ' src="assets/img/' + currentCard.image + '.jpg"&gt;&lt;h3&gt;' + currentCard.name + '&lt;/h3&gt;&lt;p&gt;' + currentCard.description + '&lt;/p&gt;';
 }
-                            </pre>
+</pre>
                             </p>
                             <p>
                                 Random Number Generator
@@ -334,7 +334,7 @@ new card ('Fool', 'A willingness...', 'fool'),
 ... additional cards ...
 ];
 
-function getRandom(num){
+function getRandom(num) {
 var randomNumber = Math.floor(Math.random() * num);
 return randomNumber;
 }
@@ -348,7 +348,7 @@ var imageSize = 'width="100" height="150"';
 
 document.getElementById("wall_display").innerHTML = '&lt;img '+ imageSize + ' src="assets/img/' + currentCard.image + '.jpg"&gt;&lt;h3&gt;' + currentCard.name + '&lt;/h3&gt;&lt;p&gt;' + currentCard.description + '&lt;/p&gt;';
 }
-                            </pre>
+</pre>
                         </p>
                         <p>
                             Random Number Generator

@@ -31,12 +31,12 @@ $projectPages = array(
     ),
     'letterboxd.php' => array(
         'liveLink' => 'https://glazemedia.princessrabano.ca/blog-post/',
-        'nextLink' => 'devote.php', // Replace with the actual link for the next project
-        'backLink' => 'index.php',
+        'nextLink' => 'index.php', // Replace with the actual link for the next project
+        'backLink' => 'coastalrolls.php',
         'backButtonIcon' => './assets/icons/back-600.svg',
         'backButtonText' => 'Prev Project',
-        'nextButtonText' => 'Next Project',
-        'nextButtonIcon' => './assets/icons/next-400.svg',
+        'nextButtonText' => 'Go Back Home',
+        'nextButtonIcon' => './assets/icons/home.svg',
     ),
 );
 

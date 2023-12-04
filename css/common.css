@@ -73,6 +73,9 @@ pre {
   border-radius: 5px;
   margin: 10px 0;
   font: revert;
+  max-height: 500px;
+  overflow-x: auto;
+  scrollbar-width: auto;
 }
 
 i {
