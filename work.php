@@ -28,7 +28,7 @@
                 Collaborative
             </button>
         </div>
-        <h2 class="featured">All Projects</h2>
+        <h2 id="featuredTitleMobile" class="featured">All Projects</h2>
         <?php include './partials/artifacts-list-component.php'; ?>
     </div>
 

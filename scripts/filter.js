@@ -2,12 +2,20 @@ function filterItems(category) {
   const projItems = document.querySelectorAll(".projItem");
   const buttons = document.querySelectorAll(".projects-btn");
 
-    // Update title based on the selected filter for desktop if the element exists
-  const titleElementDesktop = document.getElementById("featuredTitleDesktop");
-  if (titleElementDesktop) {
-    titleElementDesktop.textContent =
-      category !== "All" ? category : "All Projects";
-  }
+ const titleElementMobile = document.getElementById("featuredTitleMobile");
+ const titleElementDesktop = document.getElementById("featuredTitleDesktop");
+
+ // Check if mobile title element exists, update it if it does
+ if (titleElementMobile) {
+   titleElementMobile.textContent =
+     category !== "All" ? category : "All Projects";
+ }
+
+ // Check if desktop title element exists, update it if it does
+ if (titleElementDesktop) {
+   titleElementDesktop.textContent =
+     category !== "All" ? category : "All Projects";
+ }
 
   projItems.forEach((item) => {
     const itemCategories = item.dataset.category.split(" | ");
