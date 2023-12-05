@@ -48,7 +48,7 @@
             </div>
             <div class="ProjectNav_Row_s">
                 <div class="ProjectNav_RowName_s">
-                    <a href="letterboxd.php">Letterboxd Dashboard</a>
+                    <a href="letterboxd.php">Letterboxd Year-End Recap</a>
                 </div>
             </div>
         </div>

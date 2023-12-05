@@ -21,7 +21,7 @@ $projectPages = array(
         'nextButtonIcon' => './assets/icons/next-600.svg',
     ),
     'coastalrolls.php' => array(
-        'liveLink' => '#',
+        'liveLink' => 'https://icuyno.github.io/CoastalRolls/',
         'nextLink' => 'letterboxd.php', // Replace with the actual link for the next project
         'backLink' => 'devote.php',
         'backButtonIcon' => './assets/icons/back-600.svg',

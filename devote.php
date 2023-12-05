@@ -212,7 +212,7 @@ document.getElementById("wall_display").innerHTML = '&lt;img '+ imageSize + ' sr
                                 Prev Project
                             </span>
                         </a>
-                        <a class="Styled_link" href="index.php">
+                        <a class="Styled_link" href="coastalrolls.php">
                             <span>
                                 Next Project
                                 <img src="./assets/icons/next-400.svg" alt="next icon link">

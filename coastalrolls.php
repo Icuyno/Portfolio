@@ -1,6 +1,3 @@
-
-
-
 <?php include './partials/head.php'; ?>
 
 <?php include './partials/mobile-nav.php'; ?>
@@ -9,66 +6,157 @@
 <div class="mobileContainer">
     <div class="mainProjLayout">
         <main class="LayoutMobile">
-        <?php 
+            <div class="Proj_container">
 
-        $mobileImage1 = "https://placehold.co/600x400";
-        $mobileImage2 = "https://placehold.co/600x400";
-        $objective = "Craft a compelling and coherent narrative aligned with the brand's values and engage the target audience";
+                <?php
+                $detailsArray = array(
+                    array("Timeline", "2 weeks"),
+                    array("Year", "2023"),
+                    array("Deliverables", "High-fidelity wireframes and live website"),
+                    array("Tools", "VS code, Github, HTML, CSS, JS, Photoshop"),
+                    array("My Role", "UI Designer and Front-End developer")
+                );
+                ?>
+                <div class="proj_title">
+                    Coastal Rolls
+                </div>
 
-        $imagesArray = array(
-            array(
-                'src' => $mobileImage1,
-                'alt' => 'screenshots of blog posts',
-                'title' => 'Objective',
-                'description' => $objective
-            ),
-            array(
-                'src' => $mobileImage2,
-                'alt' => 'instagram feed screenshots',
-                'title' => 'Editorial Photoshoots',
-                'description' => 'In this editorial photoshoot, we aimed to produce in-house content, showcase our creativity, and attract our target audience. We did two photoshoots on separate occasions, hence the contrasting colour palettes. Overall, our team treated this photoshoot as our creative playground. It was experimental, but we captured a different mood and colour palette for each photoshoot. The basis for each colour palette and lighting was the model\'s personality.'
-            ),
-            array(
-                'alt' => 'Image Alt Text',
-                'title' => 'Image Title',
-                'description' => 'Image Description',
-                'includeIframe' => true, // Set this to true if iframe should be included
-                'iframeSrc' => 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FrsOP3QM5leXMBYYZPqWmfg%2FMobile-Web%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DRDabmMXZfGPy1Ezo-1',
-            ),
-        );
+                <div class="live-link-container">
+                    <a class="live-link" target="_blank" rel="noopener" href="https://icuyno.github.io/CoastalRolls/">
+                        View Live
+                        <img src="./assets/icons/link.svg" alt=" arrow link icon">
+                    </a>
+                </div>
 
-        //Title and link
-        $projectTitle = "Coastal Rolls";
-        $liveLink = "https://icuyno.github.io/CoastalRolls/";
-        $linkIcon = "./assets/icons/link.svg";
+                <div class="ProjDetails_container">
+                    <?php
+                    foreach ($detailsArray as $detail) {
+                        ?>
+                        <div class="RowDetails">
+                            <div>
+                                <?php echo $detail[0]; ?>
+                            </div>
+                            <div>
+                                <div>
+                                    <?php echo $detail[1]; ?>
+                                </div>
+                            </div>
+                        </div>
+                        <?php
+                    }
+                    ?>
+                </div>
 
-        // Define variables for ProjDetails_container
-        $detailsArray = array(
-            array("Timeline", "Jan 15, 2023 - April 9, 2023"),
-            array("Deliverables", "Social Media Blog Posts"),
-            array("UI/UX", "Rose Rabano and Pranavi Thapa"),
-            array("Graphic Design", "Riti Prasad and Janelle Cao"),
-            array("Content Manager", "Izzy Cuyno")
-        );
+                <div class="Proj_img_container">
+                    <div>
+                        <div class="img_container">
+                            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+                                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FrsOP3QM5leXMBYYZPqWmfg%2FCoastal-Rolls%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3D8LSZY8OjPFPnert9-1"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="caption_container">
+                            <h3>Objective</h3>
+                            <p>
+                                Translate high-fidelity wireframes into a responsive website for a fictitous restaurant,
+                                incorporating dynamic navigation and interactivity using HTML, CSS, and JavaScript.
+                            </p>
+                        </div>
+                        <div class="caption_container">
+                            <h3>Key Features</h3>
+                            <p>
+                                Responsive Design Implementation
+                            </p>
+                            <ul>
+                                <li>
+                                    Use of Media Queries for breakpoints, ensuring a seamless experience on various
+                                    devices.
+                                </li>
+                                <li>
+                                    Integrated jQuery library for enhanced interactivity and dynamic content
+                                    handling.
+                                </li>
+                            </ul>
+                            <p>
+                                Dynamic Navigation
+                            </p>
+                            <ul>
+                                <li>
+                                    Implemented a dynamic navigation menu for improved user experience.
+                                </li>
+                                <li>
+                                    JavaScript event handling and manipulation of the Document Object Model (DOM) to
+                                    toggle
+                                    menu visibility, enhancing accessibility.
+                                </li>
+                            </ul>
+                            <p>
+                                Lightbox Integration
+                            </p>
+                            <ul>
+                                <li>
+                                    Utilized JavaScript to create a modal gallery, allowing users to interact with
+                                    images.
+                                </li>
+                            </ul>
+                        </div>
 
-        $contribution = "Creative development of our social media presence. Content creation (social media posts and blogs). Aimed to showcase creativity and build an online community";
+                        <div class="caption_container">
+                            <h3>Lightbox Feature</h3>
+                            <div class="img_container">
+                                <Video controls autoplay muted loop
+                                    style="aspect-ratio: 4800 / 2700;image-rendering: auto;width: 100%;background-size: cover;position: absolute;inset: 0px;height: 100%;object-fit: cover;">
+                                    <source src="./assets/videos/coastalrolls-gallery.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="caption_container">
+                                <h3>
+                                    Key Takeaways
+                                </h3>
+                                <ul>
+                                    <li>
+                                        The project provided valuable insights in my journey towards
+                                        becoming a UX designer.
+                                    </li>
+                                    <li>
+                                        Gaining familiarity with front-end web development
+                                        fundamentals enabled a deeper understanding of design challenges from a
+                                        developer's
+                                        perspective.
+                                    </li>
+                                    <li>
+                                        This project helped me develop better communication and articulation skills,
+                                        especially if I had to convey ideas to a development team
+                                    </li>
+                                    <li>
+                                        The ability to communicate seamlessly with developers
+                                        contributes to a streamlined design and development process.
+                                    </li>
+                                    <li>
+                                        Ultimately, this project enhances my capabilities to deliver
+                                        the best results for end-users through becoming a better collaborator by
+                                        understanding fundamentals of development and design.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
-        // Key takeaways or concluding statements
-        $keyTakeawaysTitle = "Key Takeaways";
-        $keyTakeawaysContent = "Contributing to the creative development of Glaze Media’s online presence was a fun and collaborative experience that pushed me out of my comfort zone. It was a valuable learning journey for our team, considering it was our first time working together and managing and building a brand from scratch. This experience helped me gain insight into building a brand’s identity and effectively managing content.";
-
-        $futurePlansContent = "I look forward to taking what I have learned and continuing to grow as a creative professional in this field.";
-
-        // next link
-        $nextLink = "foodquery.php";
-        $nextButtonText = "Next Project";
-        $nextButtonIcon = "./assets/icons/next-600.svg";
-
-        include './partials/projects-component.php'; 
-
-        
-
-        ?>
+                    <div class="ProjectNav_btns">
+                        <a class="Styled_link" href="devote.php">
+                            <span>
+                                <img src="./assets/icons/back-400.svg" alt="previous icon link">
+                                Prev Project
+                            </span>
+                        </a>
+                        <a class="Styled_link" href="letterboxd.php">
+                            <span>
+                                Next Project
+                                <img src="./assets/icons/next-400.svg" alt="next icon link">
+                            </span>
+                        </a>
+                    </div>
+                </div>
         </main>
     </div>
 </div>
@@ -76,66 +164,161 @@
 <!-- desktop layout -->
 
 <div class="desktop-container">
-    
-<?php include './partials/left-aside.php'; ?>
 
-<main class="LayoutDesktop">
-<?php 
+    <?php include './partials/left-aside.php'; ?>
 
-$desktopimage1 = "https://placehold.co/600x400";
-$desktopimage2 = "https://placehold.co/600x400";
-$objective = "Craft a compelling and coherent narrative aligned with the brand's values and engage the target audience";
+    <?php
+    $detailsArray = array(
+        array("Timeline", "2 weeks"),
+        array("Year", "2023"),
+        array("Deliverables", "High-fidelity wireframes and live website"),
+        array("Tools", "VS code, Github, HTML, CSS, JS, Photoshop"),
+        array("My Role", "UI Designer and Front-End developer")
+    );
+    ?>
+    <main class="LayoutDesktop">
+        <div class="Proj_container">
+            <div class="proj_title">
+                Coastal Rolls
+            </div>
 
-$imagesArray = array(
-    array(
-        'src' => $desktopimage1,
-        'alt' => 'screenshots of blog posts',
-        'title' => 'Objective',
-        'description' => $objective
-    ),
-    array(
-        'src' => $desktopimage2,
-        'alt' => 'instagram feed screenshots',
-        'title' => 'Editorial Photoshoots',
-        'description' => 'In this editorial photoshoot, we aimed to produce in-house content, showcase our creativity, and attract our target audience. We did two photoshoots on separate occasions, hence the contrasting colour palettes. Overall, our team treated this photoshoot as our creative playground. It was experimental, but we captured a different mood and colour palette for each photoshoot. The basis for each colour palette and lighting was the model\'s personality.'
-    ),
-    array(
-        'alt' => 'Image Alt Text',
-        'title' => 'Image Title',
-        'description' => 'Image Description',
-        'includeIframe' => true, // Set this to true if iframe should be included
-        'iframeSrc' => 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FrsOP3QM5leXMBYYZPqWmfg%2FMobile-Web%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DRDabmMXZfGPy1Ezo-1',
-    ),
-);
+            <div class="live-link-container">
+                <a class="live-link" target="_blank" rel="noopener" href="https://icuyno.github.io/CoastalRolls/">
+                    View Live
+                    <img src="<?php echo $linkIcon; ?>" alt="link icon">
+                </a>
+            </div>
 
-//Title and link
-$projectTitle = "Coastal Rolls";
-$liveLink = "https://icuyno.github.io/CoastalRolls/";
-$linkIcon = "./assets/icons/link.svg";
+            <div class="ProjDetails_container">
+                <?php
+                foreach ($detailsArray as $detail) {
+                    ?>
+                    <div class="RowDetails">
+                        <div>
+                            <?php echo $detail[0]; ?>
+                        </div>
+                        <div>
+                            <div>
+                                <?php echo $detail[1]; ?>
+                            </div>
+                        </div>
+                    </div>
+                    <?php
+                }
+                ?>
+            </div>
+            <div class="Proj_img_container">
+                <div>
+                    <div class="img_container">
+                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+                            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FrsOP3QM5leXMBYYZPqWmfg%2FCoastal-Rolls%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3D8LSZY8OjPFPnert9-1"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="caption_container">
+                        <h3>Objective</h3>
+                        <p>
+                            Translate high-fidelity wireframes into a responsive website for a fictitous restaurant,
+                            incorporating dynamic navigation and interactivity using HTML, CSS, and JavaScript.
+                        </p>
+                    </div>
+                    <div class="caption_container">
+                        <h3>Key Features</h3>
+                        <p>
+                            Responsive Design Implementation
+                        </p>
+                        <ul>
+                            <li>
+                                Use of Media Queries for breakpoints, ensuring a seamless experience on various devices.
+                            </li>
+                            <li>
+                                Integrated jQuery library for enhanced interactivity and dynamic content
+                                handling.
+                            </li>
+                        </ul>
+                        <p>
+                            Dynamic Navigation
+                        </p>
+                        <ul>
+                            <li>
+                                Implemented a dynamic navigation menu for improved user experience.
+                            </li>
+                            <li>
+                                JavaScript event handling and manipulation of the Document Object Model (DOM) to toggle
+                                menu visibility, enhancing accessibility.
+                            </li>
+                        </ul>
+                        <p>
+                            Lightbox Integration
+                        </p>
+                        <ul>
+                            <li>
+                                Utilized JavaScript to create a modal gallery, allowing users to interact with images.
+                            </li>
+                        </ul>
+                    </div>
 
-// Define variables for ProjDetails_container
-$detailsArray = array(
-    array("Timeline", "Jan 15, 2023 - April 9, 2023"),
-    array("Deliverables", "Social Media Blog Posts"),
-    array("UI/UX", "Rose Rabano and Pranavi Thapa"),
-    array("Contributors", "Riti Prasad and Janelle Cao"),
-    array("Content Manager", "Izzy Cuyno")
-);
+                    <div class="caption_container">
+                        <h3>Lightbox Feature</h3>
+                        <div class="img_container">
+                            <Video controls autoplay muted loop
+                                style="aspect-ratio: 4800 / 2700;image-rendering: auto;width: 100%;background-size: cover;position: absolute;inset: 0px;height: 100%;object-fit: cover;">
+                                <source src="./assets/videos/coastalrolls-gallery.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="caption_container">
+                            <h3>
+                                Key Takeaways
+                            </h3>
+                            <ul>
+                                <li>
+                                    The project provided valuable insights in my journey towards
+                                    becoming a UX designer.
+                                </li>
+                                <li>
+                                    Gaining familiarity with front-end web development
+                                    fundamentals enabled a deeper understanding of design challenges from a developer's
+                                    perspective.
+                                </li>
+                                <li>
+                                    This project helped me develop better communication and articulation skills,
+                                    especially if I had to convey ideas to a development team
+                                </li>
+                                <li>
+                                    The ability to communicate seamlessly with developers
+                                    contributes to a streamlined design and development process.
+                                </li>
+                                <li>
+                                    Ultimately, this project enhances my capabilities to deliver
+                                    the best results for end-users through becoming a better collaborator by
+                                    understanding fundamentals of development and design.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-// images and caption
-$contribution = "Creative development of our social media presence. Content creation (social media posts and blogs). Aimed to showcase creativity and build an online community";
+
+                    <div class="ProjectNav_btns">
+                        <a class="Styled_link" href="foodquery.php">
+                            <span>
+                                <img src="./assets/icons/back-400.svg" alt="previous icon link">
+                                Prev Project
+                            </span>
+                        </a>
+                        <a class="Styled_link" href="index.php">
+                            <span>
+                                Next Project
+                                <img src="./assets/icons/next-400.svg" alt="next icon link">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+    </main>
+</div>
+</div>
 
 
-
-// Key takeaways or concluding statements
-$keyTakeawaysTitle = "Key Takeaways";
-$keyTakeawaysContent = "Contributing to the creative development of Glaze Media’s online presence was a fun and collaborative experience that pushed me out of my comfort zone. It was a valuable learning journey for our team, considering it was our first time working together and managing and building a brand from scratch. This experience helped me gain insight into building a brand’s identity and effectively managing content.";
-
-$futurePlansContent = "I look forward to taking what I have learned and continuing to grow as a creative professional in this field.";
-
-include './partials/projects-component.php'; 
-
-?>
 </main>
 </div>
 

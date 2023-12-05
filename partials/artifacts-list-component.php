@@ -50,7 +50,7 @@
 <!-- Coastal Rolls -->
 <a href="coastalrolls.php" class="projItem" data-category="UI/UX | Web Development">
     <div class="projImgCol proj_Imgcol">
-        <img src="./assets/thumbnails/coastal_rolls_cover.jpg" alt="">
+        <img src="./assets/thumbnails/coastalrolls_thumb.jpg" alt="phone, tablet, and laptop mockup of the website">
     </div>
     <div class="projIntro proj_Intro">
         <h2>
@@ -74,11 +74,11 @@
 <!-- Letterboxd -->
 <a href="letterboxd.php" class="projItem" data-category="UI/UX">
     <div class="projImgCol proj_Imgcol">
-        <img src="./assets/thumbnails/coastal_rolls_cover.jpg" alt="">
+        <img src="./assets/thumbnails/letterboxd-thumb.jpg" alt="letterboxd year-end recap mockup on macbook air M2">
     </div>
     <div class="projIntro proj_Intro">
         <h2>
-            Letterboxd Dashboard
+            Letterboxd Year-End Recap
         </h2>
         <p>
             UI/UX
