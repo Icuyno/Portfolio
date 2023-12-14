@@ -24,3 +24,5 @@
 </head>
 
 <body>
+
+<div id="preloader"></div>
