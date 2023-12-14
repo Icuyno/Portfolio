@@ -215,9 +215,9 @@
                     <div class="caption_container">
                         <h3>Ideation of User Profile</h3>
                         <br>
-                        <div class="img_container">
+                        <div class="img_container blur-load" style="background-image: url(./assets/thumbnails/foodquery_ideation-small.jpg);">
                             <img src="./assets/thumbnails/foodquery_ideation.jpg"
-                                alt="white board drawing of user profile mockup">
+                                alt="white board drawing of user profile mockup" loading="lazy">
                         </div>
                         <br>
                         <p>
@@ -491,9 +491,9 @@
                 <div class="caption_container">
                     <h3>Ideation of User Profile</h3>
                     <br>
-                    <div class="img_container">
+                    <div class="img_container blur-load" style="background-image: url(./assets/thumbnails/foodquery_ideation-small.jpg);">
                         <img src="./assets/thumbnails/foodquery_ideation.jpg"
-                            alt="white board drawing of user profile mockup">
+                            alt="white board drawing of user profile mockup" loading="lazy">
                     </div>
                     <br>
                     <p>

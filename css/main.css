@@ -976,7 +976,7 @@ iframe {
     width: 100%;
     padding: 5rem;
     scrollbar-width: auto;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     margin: auto;
   }
@@ -1263,6 +1263,8 @@ iframe {
   .Back-project-link span img {
     margin-right: 0.5rem;
     width: 1.2rem;
+    object-fit: unset;
+    object-position: unset;
   }
 
   .Next-project-link {
@@ -1281,6 +1283,8 @@ iframe {
   .Next-project-link span img {
     margin-left: 0.5rem;
     width: 1.2rem;
+    object-position: unset;
+    object-fit: unset;
   }
 
   .Styled_link:hover,

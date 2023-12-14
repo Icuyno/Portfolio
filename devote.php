@@ -50,8 +50,8 @@
 
                 <div class="Proj_img_container">
                     <div>
-                        <div class="img_container">
-                            <img src="./assets/thumbnails/devote_thumb.jpg" alt="devote tarot reading site mockup">
+                        <div class="img_container blur-load" style="background-image: url(./assets/thumbnails/devote_thumb-small.jpg)">
+                            <img src="./assets/thumbnails/devote_thumb.jpg" alt="devote tarot reading site mockup" loading="lazy">
                         </div>
                         <div class="caption_container">
                             <h3>Objective</h3>
@@ -274,8 +274,8 @@ document.getElementById("wall_display").innerHTML = '&lt;img '+ imageSize + ' sr
             </div>
             <div class="Proj_img_container">
                 <div>
-                    <div class="img_container">
-                        <img src="./assets/thumbnails/devote_thumb.jpg" alt="devote tarot reading site mockup">
+                    <div class="img_container blur-load" style="background-image: url(./assets/thumbnails/devote_thumb-small.jpg)">
+                        <img src="./assets/thumbnails/devote_thumb.jpg" alt="devote tarot reading site mockup" loading="lazy">
                     </div>
                     <div class="caption_container">
                         <h3>Objective</h3>

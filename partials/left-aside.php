@@ -104,7 +104,7 @@ $isWorkPage = ($currentPage === 'work.php'); // Check if the current page is wor
                 } elseif ($isAboutPage) {
                     // Display image for the About page
                     echo '<div class="intro-div">';
-                    echo '<img class="profile-image" src="./assets/profilepic/pizzylated.jpg" alt="picture of the creator of this site">';
+                    echo '<img class="profile-image" src="./assets/profilepic/pizzylated.jpg" alt="picture of the creator of this site" loading="lazy">';
                     echo '</div>';
                 } else {
                     echo '<div class="intro-div">';

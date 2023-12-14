@@ -125,8 +125,8 @@
                             Thinking of possible layout and types of statistics to include...
                         </p>
                         <br>
-                        <div class="img_container">
-                            <img src="./assets/thumbnails/letterboxd-ideation.jpg" alt="pencil drawing of layout">
+                        <div class="img_container blur-load" style="background-image: url(./assets/thumbnails/letterboxd-ideation-small.jpg);">
+                            <img src="./assets/thumbnails/letterboxd-ideation.jpg" alt="pencil drawing of layout" loading="lazy">
                         </div>
                         <br>
                         <h3>Share Pop-up Feature</h3>
@@ -134,8 +134,8 @@
                             Users can easily share their Letterboxd Year-End Recap on social media
                         </p>
                         <br>
-                        <div class="img_container">
-                            <img src="./assets/thumbnails/share.jpg" alt="share recap pop-up option">
+                        <div class="img_container blur-load" style="background-image: url(./assets/thumbnails/share-small.jpg);">
+                            <img src="./assets/thumbnails/share.jpg" alt="share recap pop-up option" loading="lazy">
                         </div>
                     </div>
 
@@ -327,8 +327,8 @@
                         Thinking of possible layout and types of statistics to include...
                     </p>
                     <br>
-                    <div class="img_container">
-                        <img src="./assets/thumbnails/letterboxd-ideation.jpg" alt="pencil drawing of layout">
+                    <div class="img_container blur-load" style="background-image: url(./assets/thumbnails/letterboxd-ideation-small.jpg);">
+                        <img src="./assets/thumbnails/letterboxd-ideation.jpg" alt="pencil drawing of layout" loading="lazy">
                     </div>
                     <br>
                     <h3>Share Pop-up Feature</h3>
@@ -336,8 +336,8 @@
                         Users can easily share their Letterboxd Year-End Recap on social media
                     </p>
                     <br>
-                    <div class="img_container">
-                        <img src="./assets/thumbnails/share.jpg" alt="share recap pop-up option">
+                    <div class="img_container blur-load" style="background-image: url(./assets/thumbnails/share-small.jpg);">
+                        <img src="./assets/thumbnails/share.jpg" alt="share recap pop-up option" loading="lazy">
                     </div>
                 </div>
 
