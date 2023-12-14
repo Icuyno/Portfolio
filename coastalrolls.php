@@ -24,7 +24,7 @@
                 <div class="live-link-container">
                     <a class="live-link" target="_blank" rel="noopener" href="https://icuyno.github.io/CoastalRolls/">
                         View Live
-                        <img src="./assets/icons/link.svg" alt=" arrow link icon">
+                        <img src="./assets/icons/link.svg" alt="arrow link icon">
                     </a>
                 </div>
 

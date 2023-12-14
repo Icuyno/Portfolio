@@ -24,7 +24,7 @@
 
                 <div class="live-link-container">
                     <a class="live-link" target="_blank" rel="noopener"
-                        href="https://www.figma.com/file/Ut3aokpiuAfgvvW4ZXWkmq/Letterbox-Wrapped?type=design&node-id=0%3A1&mode=design&t=wXmEsPQV7FmJFKZt-1">
+                        href="https://www.figma.com/proto/Ut3aokpiuAfgvvW4ZXWkmq/Letterboxd-Year-End-Recap?page-id=0%3A1&type=design&node-id=14-23350&viewport=410%2C434%2C0.03&t=V3LtCcLeduVvsNzj-1&scaling=scale-down&starting-point-node-id=14%3A23350&mode=design">
                         View Live
                         <img src="./assets/icons/link.svg" alt="arrow link icon">
                     </a>

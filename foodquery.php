@@ -316,7 +316,7 @@
                 <a class="live-link" target="_blank" rel="noopener"
                     href="https://www.figma.com/proto/wX2BNaXikrZ3HS1LJaWEET/Food-Query?page-id=0%3A1&type=design&node-id=5-10&viewport=-94%2C-348%2C0.3&t=W4GNMTTfRTQSyf3V-1&scaling=scale-down&starting-point-node-id=5%3A2&show-proto-sidebar=1&mode=design">
                     View Live
-                    <img src="<?php echo $linkIcon; ?>" alt="">
+                    <img src="<?php echo $linkIcon; ?>" alt="arrow icon that will redirect to new page to view live link to project">
                 </a>
             </div>
 

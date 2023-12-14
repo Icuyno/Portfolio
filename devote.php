@@ -250,7 +250,7 @@ document.getElementById("wall_display").innerHTML = '&lt;img '+ imageSize + ' sr
                 <a class="live-link" target="_blank" rel="noopener"
                     href="#">
                     View Live
-                    <img src="<?php echo $linkIcon; ?>" alt="">
+                    <img src="<?php echo $linkIcon; ?>" alt="arrow icon that will redirect to new page to view live link to project">
                 </a>
             </div>
 
